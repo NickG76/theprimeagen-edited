@@ -1,7 +1,6 @@
 require("main.set")
 require("main.remap")
 require("main.lazy_init")
-require("main.autosave")
 require("main.auto_netrw")
 
 
