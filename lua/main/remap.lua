@@ -116,3 +116,15 @@ vim.keymap.set("n", "<leader>sh", function()
     vim.cmd("wincmd j")
     vim.cmd("Ex")
 end, { desc = "Horizontal split + explorer" })
+
+
+-- exit terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+-- open terminal split
+vim.keymap.set("n", "<leader>th", function()
+    vim.cmd("belowright 15split")
+    vim.cmd("terminal")
+    vim.cmd("startinsert")
+end, { desc = "Open terminal in horizontal split" })
+

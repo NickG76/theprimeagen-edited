@@ -1,5 +1,5 @@
-local local_plugins = {
 	--{
+    local local_plugins = {
 	--    "vim-guys",
 	--    dir = "~/personal/vim-guys",
 	--    config = function()

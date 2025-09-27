@@ -4,8 +4,8 @@ return {
 	config = function()
 		require("conform").setup({
 			format_on_save = {
-				timeout_ms = 5000,
-                lsp_format = "fallback",
+				timeout_ms = 500,
+				lsp_format = "fallback",
 			},
 			formatters_by_ft = {
 				c = { "clang-format" },
@@ -15,6 +15,20 @@ return {
 				javascript = { "prettier" },
 				typescript = { "prettier" },
 				elixir = { "mix" },
+				python = { "black" },
+				rust = { "rustfmt" },
+				sh = { "shfmt" },
+				markdown = { "prettier" },
+				json = { "prettier" },
+				yaml = { "prettier" },
+				html = { "prettier" },
+				css = { "prettier" },
+				svelte = { "prettier" },
+				vue = { "prettier" },
+				sv = { "prettier" },
+				php = { "prettier" },
+				luau = { "stylua" },
+				sql = { "sqlformat" },
 			},
 			formatters = {
 				["clang-format"] = {
